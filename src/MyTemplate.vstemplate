@@ -13,6 +13,11 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <CreateInPlace>true</CreateInPlace>
     <Icon>__TemplateIcon.ico</Icon>
+    <LanguageTag>csharp</LanguageTag>
+    <ProjectTypeTag>web</ProjectTypeTag>
+    <PlatformTag>linux</PlatformTag>
+    <PlatformTag>macos</PlatformTag>
+    <PlatformTag>windows</PlatformTag>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="BlazorEmptyProject.csproj" File="BlazorEmptyProject.csproj" ReplaceParameters="true">
@@ -34,5 +39,11 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
     </Project>
+    <CustomParameters>
+      <CustomParameter Name="$language$" Value="CSharp" />
+      <CustomParameter Name="$uistyle$" Value="oneaspnet" />
+      <CustomParameter Name="$tagfilter$" Value="Blazor" />
+      <CustomParameter Name="$applyUIFilters$" Value="WebCore" />
+    </CustomParameters>
   </TemplateContent>
 </VSTemplate>
